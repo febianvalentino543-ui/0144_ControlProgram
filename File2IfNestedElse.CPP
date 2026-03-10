@@ -16,3 +16,22 @@ string Status_lulus(float r){
         return "Tidak Lulus";
 }
 
+int main(){
+    float nilBI, nilMT, rerata;
+    string status;
+
+    cout << "Masukkan nilai Bahasa Inggris : ";
+    cin >> nilBI;
+    cout << "Masukkan nilai Matematika : ";
+    cin >> nilMT;
+
+    //rerata = Rata_rata(nilBI, nilMT);
+    //if (rerata >= 60)
+    //    status = "Lulus";
+    //else 
+        //status = "Gagal";
+    rerata = Rata_rata(nilBI, nilMT);
+    status = Status_lulus(rerata);
+
+    cout << "Status kelulusan = "<<Status_lulus(rerata)<<" ,dengan nilai rerata = "<<rerata<<endl;
+}
